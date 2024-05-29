@@ -1,0 +1,15 @@
+.DS_Store
+checkpoints/
+gfpgan/
+__pycache__/
+*.pyc
+Linly-AI
+Qwen
+checkpoints
+temp
+*.wav
+*.vtt
+*.srt
+results/example_answer.mp4
+request-Linly-api.py
+results
