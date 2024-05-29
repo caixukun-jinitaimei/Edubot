@@ -182,4 +182,7 @@ ssh端口映射工具：windows：[https://autodl-public.ks3-cn-beijing.ksyuncs.
 
 
 
-Tip:large-v2.pt以压缩包形式放在目录下，解压在Edubot目录下即可
+Tip:large-v2.pt
+链接：https://pan.baidu.com/s/1DKFTXcwa3pGa2I3lfuJ-dA 
+提取码：vucr
+下载以后放在Edubot目录下即可，为网课总结需要的模型
