@@ -36,9 +36,8 @@
 
 ### 3.1 进入终端
 
-打开jupyterLab，进入数据盘（autodl-tmp），打开终端，将Linly-Talker模型下载到数据盘中。
+打开jupyterLab，进入数据盘（autodl-tmp），打开终端，将Edubot模型下载到数据盘中。
 
-![进入终端](https://pica.zhimg.com/v2-7c29a3f68c04b9af0963d4acaa63f59c.png)
 
 
 
@@ -69,7 +68,7 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 sudo apt-get install git-lfs
 ```
 
-![安装git lfs](https://pic1.zhimg.com/v2-084b5f048d1a70d8712bd6a6891c673c.png)
+
 
 根据 [https://www.modelscope.cn/Kedreamix/Linly-Talker](https://www.modelscope.cn/Kedreamix/Linly-Talker) 下载模型文件，走modelscope还是很快的，不过文件有点多，还是得等一下，记住是在Edubot代码路径下执行这个文件
 
@@ -79,14 +78,13 @@ git lfs install
 git lfs clone https://github.com/caixukun-jinitaimei/Edubot.git
 ```
 
-![下载模型文件](https://picx.zhimg.com/v2-1f61be9be69053ebe16c72762c350d18.png)
 
 等待一段时间下载完以后，利用命令将模型移动到指定目录，直接复制即可
 
 ```bash
 # 移动所有模型到当前目录
 # checkpoint中含有SadTalker和Wav2Lip
-mv Linly-Talker/checkpoints/* ./checkpoints
+mv Edubot/checkpoints/* ./checkpoints
 
 # SadTalker的增强GFPGAN
 # pip install gfpgan
@@ -125,8 +123,6 @@ pip install -r VITS/requirements_gptsovits.txt
 
 由于似乎autodl开放的是6006端口，所以这里面的端口映射也可以改一下成6006，这里吗只需要修改configs.py文件里面的port为6006即可
 
-![端口设置](https://picx.zhimg.com/v2-d9516998de3e6ffea282c4c6776c126f.png)
-
 除此之外，我发现其实对于autodl来说，不是很支持https的端口映射，所以需要注释掉几行代码即可，在webui.py的最后几行注释掉代码ssl相关代码
 
 ```bash
@@ -142,7 +138,6 @@ pip install -r VITS/requirements_gptsovits.txt
 
 如果使用app.py同理
 
-![http设置](https://picx.zhimg.com/v2-fd4aed3c765b8a4a425e12520a1461ae.png)
 
 ### 4.3 有卡开机
 
@@ -154,8 +149,6 @@ pip install -r VITS/requirements_gptsovits.txt
 nvidia-smi
 ```
 
-![有卡开机](https://pic1.zhimg.com/v2-baff41e6634fd25fb5d39806b86b1c40.png)
-
 
 
 ### 4.4 运行网页版对话webui
@@ -166,7 +159,6 @@ nvidia-smi
 python webui.py
 ```
 
-![运行网页版对话webui](https://pic1.zhimg.com/v2-c1c8a2653cef9d4b044fb85555411928.png)
 
 
 
@@ -174,7 +166,6 @@ python webui.py
 
 这可以直接打开autodl的自定义服务，默认是6006端口，我们已经设置了，所以直接使用即可
 
-![端口映射](https://picx.zhimg.com/v2-19a51c44478a1fad9e0de593ee4d547f.png)
 
 
 
@@ -182,7 +173,6 @@ python webui.py
 
 点开网页，即可正确执行Edubot，这一部分就跟视频一模一样了
 
-![体验Linly-Talker](https://picx.zhimg.com/v2-1b67099f2903fdcac732b784477851aa.png)
 
 
 
@@ -190,6 +180,4 @@ python webui.py
 
 ssh端口映射工具：windows：[https://autodl-public.ks3-cn-beijing.ksyuncs.com/tool/AutoDL-SSH-Tools.zip](https://autodl-public.ks3-cn-beijing.ksyuncs.com/tool/AutoDL-SSH-Tools.zip)
 
-**！！！注意：不用了，一定要去控制台=》容器实例，把镜像实例关机，它是按时收费的，不关机会一直扣费的。**
 
-**建议选北京区的，稍微便宜一些。可以晚上部署，网速快，便宜的GPU也充足。白天部署，北京区的GPU容易没有。**
