@@ -181,3 +181,5 @@ python webui.py
 ssh端口映射工具：windows：[https://autodl-public.ks3-cn-beijing.ksyuncs.com/tool/AutoDL-SSH-Tools.zip](https://autodl-public.ks3-cn-beijing.ksyuncs.com/tool/AutoDL-SSH-Tools.zip)
 
 
+
+Tip:large-v2.pt以压缩包形式放在目录下，解压在Edubot目录下即可
