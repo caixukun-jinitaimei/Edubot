@@ -1,4 +1,5 @@
-注：本项目已在webui.py代码中添加了网课总结、chatbot对话部分，网课总结目前并未进行gpu的优化
+注：本项目已在webui.py代码中添加了网课总结、chatbot对话部分，网课总结目前并未进行gpu的优化，最后跑项目用python webui.py命令即可，
+数字人部分具体见https://github.com/Kedreamix/Linly-Talker这个项目的中文版介绍
 
 
 
